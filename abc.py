@@ -11,7 +11,7 @@ from collections import deque
 model = tf.keras.models.load_model("model.h5")
 
 # Define your trained class labels
-actions = np.array(['hello', 'thanks','yes'])  # 🔧 EDIT to match your dataset
+actions = np.array(['hello', 'thanks','How are you'])  # 🔧 EDIT to match your dataset
 
 # ----------------------------
 # MediaPipe setup
@@ -126,3 +126,4 @@ if run:
     cap.release()
 else:
     st.info("👆 Click the checkbox above to start the webcam.")
+
